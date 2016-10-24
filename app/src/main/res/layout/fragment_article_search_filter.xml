@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dialog_fragment_padding"
+    tools:context=".fragments.ArticleSearchFilterFragment">
+
+
+    <TextView
+        android:id="@+id/tvBeginDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/begin_date"
+        android:layout_marginTop="@dimen/begin_date_label_margin_top"
+        android:textSize="@dimen/text_size"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBeginDate"
+        android:layout_toRightOf="@+id/tvBeginDateLabel"
+        tools:text="22 October 2013"
+        android:textSize="@dimen/text_size"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/begin_date_margin_top"
+        android:layout_marginLeft="@dimen/begin_date_margin_left"/>
+
+    <TextView
+        android:id="@+id/tvSortOrderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sort_order"
+        android:layout_below="@+id/tvBeginDateLabel"
+        android:layout_marginTop="@dimen/sort_order_label_margin_top"
+        android:layout_marginRight="@dimen/sort_order_label_margin_right"
+        android:textSize="@dimen/text_size"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerSortOrder"
+        android:textSize="@dimen/text_size"
+        android:entries="@array/sort_order_array"
+        android:prompt="@string/sort_order_prompt"
+        android:layout_marginTop="@dimen/sort_order_margin_top"
+        android:layout_below="@+id/tvBeginDateLabel"
+        android:layout_toRightOf="@+id/tvSortOrderLabel" />
+
+    <TextView
+        android:id="@+id/tvNewsDeskLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/news_desk_n_values"
+        android:layout_below="@+id/tvSortOrderLabel"
+        android:layout_marginTop="@dimen/news_desk_label_margin_top"
+        android:textSize="@dimen/text_size"/>
+
+    <CheckBox
+        android:text="@string/arts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerSortOrder"
+        android:layout_toRightOf="@+id/tvNewsDeskLabel"
+        android:layout_toEndOf="@+id/tvNewsDeskLabel"
+        android:layout_marginLeft="@dimen/arts_margin_left"
+        android:layout_marginStart="@dimen/arts_margin_left"
+        android:layout_marginTop="@dimen/arts_margin_top"
+        android:id="@+id/cbArts" />
+
+    <CheckBox
+        android:text="@string/fashion_amp_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvNewsDeskLabel"
+        android:layout_toEndOf="@+id/tvNewsDeskLabel"
+        android:layout_marginLeft="@dimen/fashion_margin_left"
+        android:layout_marginStart="@dimen/fashion_margin_left"
+        android:id="@+id/cbFashion"
+        android:layout_below="@+id/tvNewsDeskLabel" />
+
+    <CheckBox
+        android:text="@string/sports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbFashion"
+        android:layout_toRightOf="@+id/tvNewsDeskLabel"
+        android:layout_toEndOf="@+id/tvNewsDeskLabel"
+        android:layout_marginLeft="@dimen/sports_margin_left"
+        android:layout_marginStart="@dimen/sports_margin_left"
+        android:layout_marginTop="@dimen/sports_margin_top"
+        android:id="@+id/cbSports" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbSports"
+        android:layout_marginTop="@dimen/save_margin_top"
+        android:text="@string/save"
+        android:background="@color/colorAccent"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

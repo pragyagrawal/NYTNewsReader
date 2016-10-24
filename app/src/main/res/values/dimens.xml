@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="recycler_view_margin">4dp</dimen>
+    <dimen name="begin_date_label_margin_top">32dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="begin_date_margin_top">32dp</dimen>
+    <dimen name="begin_date_margin_left">38dp</dimen>
+    <dimen name="sort_order_label_margin_top">24dp</dimen>
+    <dimen name="sort_order_label_margin_right">36dp</dimen>
+    <dimen name="sort_order_margin_top">24dp</dimen>
+    <dimen name="news_desk_label_margin_top">24dp</dimen>
+    <dimen name="arts_margin_left">26dp</dimen>
+    <dimen name="arts_margin_top">24dp</dimen>
+    <dimen name="fashion_margin_left">26dp</dimen>
+    <dimen name="sports_margin_left">26dp</dimen>
+    <dimen name="sports_margin_top">12dp</dimen>
+    <dimen name="save_margin_top">32dp</dimen>
+    <dimen name="headlines_padding">8dp</dimen>
+    <dimen name="headlines_only_size">18sp</dimen>
+    <dimen name="dialog_fragment_padding">16dp</dimen>
+</resources>

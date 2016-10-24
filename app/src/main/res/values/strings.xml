@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NYT News Reader</string>
+    <string name="action_search">Search</string>
+    <string name="action_filter">filter</string>
+    <string name="sort_order_prompt">Sort Order</string>
+    <string name="begin_date">Begin Date</string>
+    <string name="sort_order">Sort Order</string>
+    <string name="arts">Arts</string>
+    <string name="news_desk_n_values">News Desk \n values</string>
+    <string name="fashion_amp_style">Fashion</string>
+    <string name="sports">Sports</string>
+    <string name="save">SAVE</string>
+    <string name="response_failed">Response failed</string>
+    <string name="share_link">Share Link</string>
+    <string name="no_internet_msg">Internet Connection Not Available, please try again.</string>
+    <string name="exception_implement_oncomplete_listener">Activity must implement OnCompleteListener</string>
+
+    <string-array name="sort_order_array">
+        <item>Oldest</item>
+        <item>Newest</item>
+    </string-array>
+
+</resources>
