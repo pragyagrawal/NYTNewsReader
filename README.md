@@ -40,7 +40,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-[Linkname](https://www.youtube.com/watch?v=jRR1dG_G97E)
+[Linkname](https://youtu.be/YjPq7lNBzIE)
 
 ## Notes
 
