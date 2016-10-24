@@ -2,8 +2,6 @@ package com.binarybricks.pragya.nytnewsreader.fragments;
 
 import android.app.DatePickerDialog;
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
@@ -156,7 +154,6 @@ public class ArticleSearchFilterFragment extends DialogFragment {
                 tvBeginDate.setText(formatedDate);
             }
         }, startYear, startMonth, startDay);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.show();
 
     }
