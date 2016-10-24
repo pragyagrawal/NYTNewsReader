@@ -87,7 +87,7 @@ public class NewsSearchActivity extends AppCompatActivity implements ArticleSear
     private void initializeRecyclerView()
     {
         // First param is number of columns and second param is orientation i.e Vertical or Horizontal
-        StaggeredGridLayoutManager gridLayoutManager = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
+        StaggeredGridLayoutManager gridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
 
         // Attach the layout manager to the recycler view
         rvNewsArticle.setLayoutManager(gridLayoutManager);
@@ -132,6 +132,8 @@ public class NewsSearchActivity extends AppCompatActivity implements ArticleSear
                     newsArticleAdapter.setArticleDocsList(articleDocsList, refreshArticleList);
                     newsArticleAdapter.notifyDataSetChanged();
                     rvNewsArticle.setVisibility(View.VISIBLE);
+                }else{
+                    Toast.makeText(NewsSearchActivity.this, "Error: "+response.message(), Toast.LENGTH_SHORT).show();
                 }
             }
 
