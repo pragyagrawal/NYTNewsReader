@@ -14,6 +14,7 @@
     <string name="share_link">Share Link</string>
     <string name="no_internet_msg">Internet Connection Not Available, please try again.</string>
     <string name="exception_implement_oncomplete_listener">Activity must implement OnCompleteListener</string>
+    <string name="intent_extra_value">http://www.codepath.com</string>
 
     <string-array name="sort_order_array">
         <item>Oldest</item>

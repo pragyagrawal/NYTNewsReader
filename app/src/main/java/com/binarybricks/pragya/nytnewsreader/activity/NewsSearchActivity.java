@@ -239,6 +239,8 @@ public class NewsSearchActivity extends AppCompatActivity implements ArticleSear
         CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
         builder.setToolbarColor(ContextCompat.getColor(NewsSearchActivity.this, R.color.colorPrimary));
         Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.intent_extra_value));
 
         PendingIntent pendingIntent = PendingIntent.getActivity(NewsSearchActivity.this,
                 requestCodeCustomTab, intent, PendingIntent.FLAG_UPDATE_CURRENT);
