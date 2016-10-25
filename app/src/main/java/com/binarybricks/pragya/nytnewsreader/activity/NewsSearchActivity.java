@@ -116,7 +116,7 @@ public class NewsSearchActivity extends AppCompatActivity implements ArticleSear
         });
     }
 
-    private void fetchNewsArticles(String query,String beginDate, String sortOrder, String filterQuery, Integer page_no, final boolean refreshArticleList) {
+    private void fetchNewsArticles(final String query, final String beginDate, final String sortOrder, final String filterQuery, final Integer page_no, final boolean refreshArticleList) {
 
         if(refreshArticleList)
         {
@@ -133,7 +133,12 @@ public class NewsSearchActivity extends AppCompatActivity implements ArticleSear
                     newsArticleAdapter.notifyDataSetChanged();
                     rvNewsArticle.setVisibility(View.VISIBLE);
                 }else{
-                    Toast.makeText(NewsSearchActivity.this, "Error: "+response.message(), Toast.LENGTH_SHORT).show();
+                    if(response.code()==429) {
+                        fetchNewsArticles(query,beginDate,sortOrder,filterQuery,page_no,refreshArticleList);
+                    }
+                    else {
+                        Toast.makeText(NewsSearchActivity.this, "Error: " + response.errorBody(), Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
 
